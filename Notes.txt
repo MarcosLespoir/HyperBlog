@@ -1,7 +1,11 @@
-
+Git
+    • Branch
+        - $ git checkout name_branch
+        - $ git branch
+        - $ git branch -m old_name new_name
 
 GitHub
-    • Remote
+    • HTTPS Remote
         'Añade la url de un ropositorio de GitHub'
 
         - $ git remote add origin 'https://github.com/url/repositorio'
@@ -11,11 +15,26 @@ GitHub
             * origin http://url (fetch)
             * origin http://url (push)
 
+        - $ git pull origin main --allow-unrelated.hisories
+
         - $ git pull origin main
             'trae desde origin hacia nuestra rama'
 
         - $ git push origin main
             'Hace un merch de mi repositorio con el repositorio de GitHub'
 
+    • SSH config
+        'llave privada / llave publica'
 
+        - $ ssh-keygen -t rsa -b 4096 -C "tu@email.com"
+            'Genera llaves ssh'
+
+        - $ eval $(ssh-agent -s)
+            'evalua que el servidor de ssh este corriendo'
+
+        - $ shh-add ~/.ssh/id_rsa
+            '[ADD] existencia de la llave privada'
+
+        - $ git remote set-url origin [url]
+            'modifica la url de nuestro repositorio'
 
