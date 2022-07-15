@@ -1,0 +1,21 @@
+
+
+GitHub
+    • Remote
+        'Añade la url de un ropositorio de GitHub'
+
+        - $ git remote add origin 'https://github.com/url/repositorio'
+            'Crea 
+
+        - $ git remote -v
+            * origin http://url (fetch)
+            * origin http://url (push)
+
+        - $ git pull origin main
+            'trae desde origin hacia nuestra rama'
+
+        - $ git push origin main
+            'Hace un merch de mi repositorio con el repositorio de GitHub'
+
+
+
