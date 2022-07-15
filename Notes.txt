@@ -1,40 +1,70 @@
-Git
-    • Branch
-        - $ git checkout name_branch
-        - $ git branch
-        - $ git branch -m old_name new_name
+    Git
+Branch
+    • $ git checkout name_branch
+    • $ git branch
+    • $ git branch -df name_branch
+    • $ git branch -m old_name new_name
 
-GitHub
-    • HTTPS Remote
-        'Añade la url de un ropositorio de GitHub'
+    GitHub
+HTTPS Remote
+    'Añade la url de un ropositorio de GitHub'
 
-        - $ git remote add origin 'https://github.com/url/repositorio'
-            'Crea 
+    • $ git remote add origin 'https://github.com/url/repositorio'
+        'Crea 
 
-        - $ git remote -v
-            * origin http://url (fetch)
-            * origin http://url (push)
+    • $ git remote -v
+        * origin http://url (fetch)
+        * origin http://url (push)
 
-        - $ git pull origin main --allow-unrelated.hisories
+    • $ git pull origin main --allow-unrelated.hisories
 
-        - $ git pull origin main
-            'trae desde origin hacia nuestra rama'
+    • $ git pull origin main
+        'trae desde origin hacia nuestra rama'
 
-        - $ git push origin main
-            'Hace un merch de mi repositorio con el repositorio de GitHub'
+    • $ git push origin main
+        'Hace un merch de mi repositorio con el repositorio de GitHub'
 
-    • SSH config
-        'llave privada / llave publica'
+SSH config
+    'llave privada / llave publica'
 
-        - $ ssh-keygen -t rsa -b 4096 -C "tu@email.com"
+    • $ ssh-keygen -t rsa -b 4096 -C "tu@email.com"
             'Genera llaves ssh'
 
-        - $ eval $(ssh-agent -s)
-            'evalua que el servidor de ssh este corriendo'
+    • $ eval $(ssh-agent -s)
+        'evalua que el servidor de ssh este corriendo'
 
-        - $ shh-add ~/.ssh/id_rsa
-            '[ADD] existencia de la llave privada'
+    • $ shh-add ~/.ssh/id_rsa
+        '[ADD] existencia de la llave privada'
 
-        - $ git remote set-url origin [url]
-            'modifica la url de nuestro repositorio'
+    • $ git remote set-url origin [url]
+        'modifica la url de nuestro repositorio'
+
+Tags & Versions
+
+    • Commits list
+        * $ git log --all
+        * $ git log --all --graph
+        * $ git log --all --graph --decorate --oneline
+    • $ alias [alias: tree]=[command: ""]
+    
+    • $ git tag -a [tag: v0.1] -m [msg: ""] [hash: 08ad6fc]
+        'tags para registro de versiones'
+    • $ git push origin --tags
+        'envia el registro de tags a GitHub'
+    • $ git tag -d [tag: v0.1]
+        'elimina un tag de mi repertorio'
+        'luego vuelvo a hacer un push'
+    • $ git push origin :refs/tags/dormido
+        'elimina el tag en el origen'
+
+    • $ git tag
+        'tag list'
+    • $ git show-ref --tags
+        '[asigned commit] [tag version]'
+    • $ git tag
+
+    
+
+
+
 
