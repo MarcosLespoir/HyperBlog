@@ -1,9 +1,17 @@
     Git
 Branch
-    • $ git checkout name_branch
     • $ git branch
-    • $ git branch -df name_branch
+        'brances list'
+    • $ git checkout name_branch
+        'git '
     • $ git branch -m old_name new_name
+        'rename'
+    • $ git branch -df name_branch
+        'delete'
+Merge
+    (HEAD --> main)
+    • $ git merge [branch: footer]
+        'fuciona el branch HEAD con el que se le indique'
 
     GitHub
 HTTPS Remote
@@ -61,11 +69,7 @@ Tags & Versions
         'tag list'
     • $ git show-ref --tags
         '[asigned commit] [tag version]'
-        
-Origin Branch
-
-    • $ git push origin [branch: header]
-        'enviar rama al origin'
+    • $ git tag
 
     
 
