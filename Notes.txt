@@ -61,7 +61,11 @@ Tags & Versions
         'tag list'
     • $ git show-ref --tags
         '[asigned commit] [tag version]'
-    • $ git tag
+        
+Origin Branch
+
+    • $ git push origin [branch: header]
+        'enviar rama al origin'
 
     
 

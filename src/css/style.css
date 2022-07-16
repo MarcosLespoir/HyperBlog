@@ -1,0 +1,33 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+#container{
+    width: 70%;
+    margin: 0 auto;
+    text-align: left;
+    border: 2px solid #333;
+}
+
+#cabecera{
+    background-color: rgb(100, 11, 108);
+    color: white;
+    box-shadow: #333 0px 10px 10px 1px;
+    padding: 1rem;
+    width: 100%-2rem;
+    font-family: helvetica;
+    font-size: 30px;
+}
+
+#post{
+    padding: 3em;
+}
+#post h1{
+    font-size: 30px;
+}
